@@ -26,3 +26,7 @@ Consigli del giorno:
 Buon lavoro e buon divertimento!
 */
 
+const app = new Vue({
+    el: '#root',
+})
+
