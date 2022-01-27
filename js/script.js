@@ -2,6 +2,8 @@ console.log('JS OK');
 
 console.log('Vue ok', Vue);
 
+Vue.config.devtools = true;
+
 /*
 Partendo dal markup fornito in allegato, implementare la logica per far funzionare lo slider:
 Deve essere possibile scorrere le immagini cliccando sulle freccette.
@@ -41,6 +43,17 @@ const app = new Vue({
     methods: {
         isActive(index) {
             return index === this.currentIndex;
+        },
+        setPic(index) {
+            this.currentIndex = index;
+        },
+        prevPic() {
+            if (this.currentIndex === 0) this.currentIndex = this.images.lenght - 1;
+            else this.currentIndex--;
+        },
+        nextPic() {
+            if (this.currentIndex === this.images.lenght - 1) this.currentIndex = 0;
+            else this.currentIndex++;
         }
     }
 });
