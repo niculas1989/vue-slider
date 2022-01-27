@@ -48,11 +48,11 @@ const app = new Vue({
             this.currentIndex = index;
         },
         prevPic() {
-            if (this.currentIndex === 0) this.currentIndex = this.images.lenght - 1;
+            if (this.currentIndex === 0) this.currentIndex = this.images.length - 1;
             else this.currentIndex--;
         },
         nextPic() {
-            if (this.currentIndex === this.images.lenght - 1) this.currentIndex = 0;
+            if (this.currentIndex === this.images.length - 1) this.currentIndex = 0;
             else this.currentIndex++;
         }
     }
