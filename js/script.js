@@ -34,6 +34,7 @@ const app = new Vue({
     el: '#root',
     data: {
         isAutoplay: false,
+        autoplay: 0,
         currentIndex: 0,
         images: [
             'images/image1.jpg',
@@ -64,9 +65,5 @@ const app = new Vue({
         actualPic(index) {
             this.currentIndex = index;
         }
-    },
-    created() {
-
     }
-
 });
