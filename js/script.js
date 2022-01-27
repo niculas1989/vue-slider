@@ -33,6 +33,7 @@ Buon lavoro e buon divertimento!
 const app = new Vue({
     el: '#root',
     data: {
+        isAutoplay: false,
         currentIndex: 0,
         images: [
             'images/image1.jpg',
@@ -65,8 +66,7 @@ const app = new Vue({
         }
     },
     created() {
-        autoPlay()
-        setInterval(this.nextPic(), 3000
-        )
+
     }
+
 });
