@@ -47,7 +47,11 @@ const app = new Vue({
             return index === this.currentIndex;
         },
         nextPic() {
-            this.currentIndex++;
+            if (this.currentIndex === this.images.length - 1) {
+                this.currentIndex = 0;
+            } else {
+                this.currentIndex++;
+            }
         },
         prevPic() {
             if (this.currentIndex === 0) {
