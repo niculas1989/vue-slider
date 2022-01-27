@@ -47,10 +47,10 @@ const app = new Vue({
             return index === this.currentIndex;
         },
         nextPic() {
-
+            this.currentIndex++;
         },
         prevPic() {
-
+            this.currentIndex--;
         }
     }
 
