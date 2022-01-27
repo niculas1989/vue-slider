@@ -1,5 +1,7 @@
 console.log('JS OK');
 
+console.log('Vue ok', Vue);
+
 /*
 Partendo dal markup fornito in allegato, implementare la logica per far funzionare lo slider:
 Deve essere possibile scorrere le immagini cliccando sulle freccette.
@@ -23,3 +25,4 @@ Consigli del giorno:
 - oltre a Vue, ora abbiamo diversi strumenti in più nelle nostre tasche, che possono tornarci utili per svolgere l'esercizio in una versione più evoluta ed efficace, soprattutto per quando riguarda la struttura dei dati.
 Buon lavoro e buon divertimento!
 */
+
