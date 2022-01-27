@@ -28,5 +28,15 @@ Buon lavoro e buon divertimento!
 
 const app = new Vue({
     el: '#root',
+    data:
+    {
+        currentIndex: 0,
+        images: [
+            'images/image1.jpeg',
+            'images/image2.jpeg',
+            'images/image3.jpeg',
+            'images/image4.jpeg'
+        ]
+    }
 })
 
