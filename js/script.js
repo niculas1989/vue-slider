@@ -32,11 +32,16 @@ const app = new Vue({
     {
         currentIndex: 0,
         images: [
-            'images/image1.jpeg',
-            'images/image2.jpeg',
-            'images/image3.jpeg',
-            'images/image4.jpeg'
+            'images/image1.jpg',
+            'images/image2.jpg',
+            'images/image3.jpg',
+            'images/image4.jpg'
         ]
+    },
+    methods: {
+        isActive(index) {
+            return index === this.currentIndex;
+        }
     }
-})
+});
 
