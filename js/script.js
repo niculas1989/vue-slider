@@ -63,6 +63,10 @@ const app = new Vue({
         actualPic(index) {
             this.currentIndex = index;
         }
+    },
+    created() {
+        autoPlay()
+        setInterval(this.nextPic(), 3000
+        )
     }
-
 });
