@@ -45,11 +45,14 @@ const app = new Vue({
         //# qui andranno funzioni
         isActive(index) {
             return index === this.currentIndex;
+        },
+        nextPic() {
+
+        },
+        prevPic() {
+
         }
     }
-
-
-
 
 });
 
