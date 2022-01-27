@@ -28,7 +28,8 @@
             <img v-for="(image, index) in images" v-if="isActive(index)" class="img-fluid" :src="image"
               :alt="`Immagine ${index + 1}`" />
             <div class="slider-dots">
-              <div v-for="(image, index) in images" class="dot mx-2" :class="{active: isActive(index)}"></div>
+              <div v-for="(image, index) in images" class="dot mx-2" :class="{active: isActive(index)}"
+                @click="actualPic(index)"></div>
             </div>
           </div>
         </div>

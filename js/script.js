@@ -59,6 +59,9 @@ const app = new Vue({
             } else {
                 this.currentIndex--;
             }
+        },
+        actualPic(index) {
+            this.currentIndex = index;
         }
     }
 
